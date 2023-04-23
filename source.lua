@@ -102,7 +102,7 @@ Rat:AddButton({
 		while true do
 			CurrentSpinY = CurrentSpinY + spinY
 			run.RenderStepped:Connect(function()
-				hrp.CFrame = CFrame.lookAt(hrp.Position, Vector3.new(0,0,0)) * CFrame.Angles(0, CurrentSpinY / 100, 0)
+				hrp.CFrame = CFrame.lookAt(hrp.Position, Vector3.new(hrp.Position.X,0,hrp.Position.Z)) * CFrame.Angles(0, CurrentSpinY / 100, 0)
 			end)
 			wait(0.01)
 		end
