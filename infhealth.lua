@@ -4,4 +4,5 @@ local character = player.Character or player.CharacterAdded:Wait()
 local humanoid = character.Humanoid
 while true do
 	humanoid.Health = humanoid.MaxHealth
+	wait(0.1)
 end
